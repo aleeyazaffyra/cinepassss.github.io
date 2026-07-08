@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700;800;900&family=Space+Mono:wght=400;700&display=swap');
+
+:root {
+    --cinema-bg: #070709;
+    --cinema-dark: #0f0f12;
+    --cinema-card: #15151a;
+    --cinema-cherry: #ff0055;
+    --cinema-cherry-hover: #d60048;
+    --cinema-border: #22222a;
+}
+
+body {
+    background-color: var(--cinema-bg) !important; 
+    color: #f4f4f5 !important;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--cinema-bg); }
+::-webkit-scrollbar-thumb { background: #2a2a35; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--cinema-cherry); }
+
+
+.text-cinema-cherry { color: var(--cinema-cherry); }
+.bg-cinema-cherry { background-color: var(--cinema-cherry); }
+.bg-cinema-cherry:hover { background-color: var(--cinema-cherry-hover); }
+.border-cinema-cherry { border-color: var(--cinema-cherry); }
+.shadow-neon-cherry { box-shadow: 0 0 15px rgba(255, 0, 85, 0.45); }
+.shadow-neon-glow { box-shadow: 0 0 30px rgba(255, 0, 85, 0.2); }
+.barcode-font { font-family: 'Space Mono', monospace; letter-spacing: 4px; }
+
+
+.table-cinema { color: #f4f4f5 !important; border-color: #22222a !important; }
+.table-cinema th { background-color: #0f0f12 !important; color: #a1a1aa !important; border-color: #22222a !important; }
+.table-cinema td { background-color: transparent !important; color: #d4d4d8 !important; border-color: #22222a !important; }
+
+
+#pdf-receipt-container { background: white !important; color: black !important; }
+#pdf-receipt-container * { color: black !important; }
+
+
+.nav-btn-active { background-color: var(--cinema-cherry) !important; color: white !important; box-shadow: 0 0 15px rgba(255, 0, 85, 0.45); }
